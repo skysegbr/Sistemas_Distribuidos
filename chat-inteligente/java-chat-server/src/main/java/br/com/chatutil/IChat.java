@@ -1,4 +1,4 @@
-package br.com.serverrmi.util;
+package br.com.chatutil;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;

@@ -2,9 +2,7 @@ package br.com.serverrmi;
 
 import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
-
-import br.com.chatutil.Chat;
-
+import br.com.serverrmi.*;
 
 public class ChatServer {
 

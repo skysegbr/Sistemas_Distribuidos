@@ -1,17 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>br.com.clientrmi</groupId>
-  <artifactId>java-chat-client</artifactId>
+  <groupId>br.com.serverrmi</groupId>
+  <artifactId>java-chat-server</artifactId>
   <packaging>jar</packaging>
   <version>1.0</version>
-  <name>java-chat-client</name>
+  <name>java-chat-server</name>
   <url>http://maven.apache.org</url>
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
-
   <dependencies>
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -19,6 +18,15 @@
       <version>1.18.12</version>
       <scope>provided</scope>
     </dependency>
+
+    <dependency>
+      <groupId>br.com.chatutil</groupId>
+      <artifactId>br.com.chatutil</artifactId>
+      <scope>system</scope>
+      <version>1.0</version>
+      <systemPath>D:\Dev\Aula_Andre\Sistemas_Distribuidos\chat-inteligente\java-chat-util\src\main\java\br\com\chatutil\Chat.java</systemPath>
+   </dependency>
+    
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
