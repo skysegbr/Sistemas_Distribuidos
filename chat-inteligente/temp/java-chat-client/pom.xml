@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>br.com.clientrmi</groupId>
   <artifactId>java-chat-client</artifactId>
@@ -13,6 +12,13 @@
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>br.com.chatutil</groupId>
+      <artifactId>java-chat-util</artifactId>
+      <scope>system</scope>
+      <version>1.0</version>
+      <systemPath>D:\Dev\Aula_Andre\Sistemas_Distribuidos\chat-inteligente\temp\java-chat-util\target\java-chat-util-1.0.jar</systemPath>
+    </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>

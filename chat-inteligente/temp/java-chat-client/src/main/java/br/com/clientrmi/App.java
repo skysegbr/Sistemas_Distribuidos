@@ -4,9 +4,10 @@ import java.rmi.Naming;
 
 import javax.swing.JOptionPane;
 
+import br.com.chatutil.IChat;
 
 public class App {
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
 
         String nome = "";
         String msgp = "";
@@ -19,12 +20,9 @@ public class App {
                 IChat chat = (IChat) Naming.lookup("rmi://localhost:8282/chat");
             }
 
-        } catch(Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
-
-
-
 
     }
 }
