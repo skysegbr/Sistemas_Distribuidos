@@ -3,10 +3,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>br.com.loja</groupId>
-    <artifactId>cliente</artifactId>
+    <artifactId>fornecedor</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>cliente</name>
-    <description>API Modulo Cliente</description>
+    <name>fornecedor</name>
+    <description>API Modulo fornecedor</description>
 
     <properties>
         <maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
