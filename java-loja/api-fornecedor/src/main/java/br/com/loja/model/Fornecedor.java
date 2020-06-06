@@ -8,10 +8,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @Document
-public class Cliente {
+public class Fornecedor {
 
     @Id
     private int id;
     private String nome;
     private String telefone;
+    private String cnpj;
 }
