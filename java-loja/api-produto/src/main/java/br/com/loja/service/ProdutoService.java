@@ -17,12 +17,15 @@ public class ProdutoService {
     public Produto save(Produto produto){
         return produtoRepository.save(produto);
     }
+
     public List<Produto> findAll(){
         return produtoRepository.findAll();
     }
+
     public Optional<Produto> findById(int id){
         return produtoRepository.findById(id);
     }
+    
     public void delete(int id){
         produtoRepository.deleteById(id);
     }
