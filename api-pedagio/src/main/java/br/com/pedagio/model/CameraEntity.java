@@ -18,4 +18,5 @@ public class CameraEntity implements Serializable {
     @Id
     private int id;
     private byte[] image;
+
 }

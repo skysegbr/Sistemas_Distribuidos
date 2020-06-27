@@ -9,15 +9,23 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class MyApplication {
 
-    @Value("${queue.pedagio.name}")
-    private String pedagioQueue;
+    @Value("${queue.tag.name}")
+    private String tagQueue;
+
+    @Value("${queue.can.name}")
+    private String canQueue;
 
     public static void main(String[] args) {
         SpringApplication.run(MyApplication.class, args);
     }
 
     @Bean
-    public Queue queue(){
-        return new Queue(pedagioQueue, true);
+    public Queue queueTag(){
+        return new Queue(tagQueue, true);
+    }
+
+    @Bean
+    public Queue queueCan(){
+        return new Queue(canQueue, true);
     }
 }

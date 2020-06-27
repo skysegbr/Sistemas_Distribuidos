@@ -3,6 +3,7 @@ package br.com.pedagio.rabbit;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import br.com.pedagio.model.TransponderEntity;
 
@@ -12,6 +13,7 @@ public class TransponderProducer {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
+    @Qualifier("queueTag")
     @Autowired
     private Queue queue;
 

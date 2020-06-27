@@ -12,10 +12,9 @@ public class CameraConsumer {
     @Autowired
     private CameraService cameraService;
 
-    @RabbitListener(queues = {"${queue.pedagio.name}"})
+    @RabbitListener(queues = {"${queue.can.name}"})
     public void receive (@Payload CameraEntity CameraEntity){
         System.out.println("Id: "+ CameraEntity.getId() + "\nImage: " + CameraEntity.getImage());
-        //Inserir dado no Mongo
         cameraService.save(CameraEntity);
     }
 }

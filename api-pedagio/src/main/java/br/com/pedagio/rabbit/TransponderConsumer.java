@@ -13,10 +13,9 @@ public class TransponderConsumer {
     @Autowired
     private TransponderService pedagioService;
 
-    @RabbitListener(queues = {"${queue.pedagio.name}"})
+    @RabbitListener(queues = {"${queue.tag.name}"})
     public void receive (@Payload TransponderEntity transponderEntity){
         System.out.println("Id: "+ transponderEntity.getId() + "\nTag: " + transponderEntity.getTag());
-        //Inserir dado no Mongo
         pedagioService.save(transponderEntity);
     }
 } 
